@@ -1,0 +1,12 @@
+data_cleaning_notes.tex
+*.aux
+*.log
+*.nav
+*.out
+*.pdf
+*.snm
+*.toc
+R/*.zip
+R/*.csv
+R/*.gz
+*_notes.tex
