@@ -1,6 +1,6 @@
 STEM = general_hmm
 
-FIGS = Figs/hs.pdf Figs/ri8.pdf
+FIGS = Figs/hs.pdf Figs/ri8.pdf Figs/genome_reconstr.pdf
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
 
