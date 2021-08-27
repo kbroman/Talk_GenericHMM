@@ -1,6 +1,6 @@
 STEM = general_hmm
 
-FIGS=
+FIGS = Figs/hs.pdf Figs/ri8.pdf
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
 
