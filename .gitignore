@@ -1,4 +1,3 @@
-data_cleaning_notes.tex
 *.aux
 *.log
 *.nav
@@ -10,3 +9,4 @@ R/*.zip
 R/*.csv
 R/*.gz
 *_notes.tex
+R/_cache
