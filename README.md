@@ -1,23 +1,16 @@
-# Data cleaning principles
+# General HMM for multi-parent populations
 
-Slides for a talk for [csv,conf,v6](https://csvconf.com/), May 4-5, 2021.
+Slides for a talk for [Complex Trait
+Community](http://www.complextrait.org/ctc2021/), 1 Sept 2021.
 
-- [slides pdf](https://kbroman.org/Talk_DataCleaning/data_cleaning.pdf)
-- [slides pdf with notes](https://kbroman.org/Talk_DataCleaning/data_cleaning_notes.pdf)
-- [draft transcript](transcript.md)
-- [summary slide (pdf)](https://kbroman.org/Talk_DataCleaning/data_cleaning_principles.pdf)
-- [video](https://www.youtube.com/watch?v=7Ma8WIDinDc)
-
+- [slides pdf](https://kbroman.org/Talk_GeneralHMM/general_hmm.pdf)
+- [slides pdf with notes](https://kbroman.org/Talk_GeneralHMM/general_hmm_notes.pdf)
+- [related paper](https://doi.org/10.1101/2021.08.03.454963)
 
 ## Required R packages
 
-- [berryFunctions](https://cran.r-project.org/package=berryFunctions)
 - [broman](https://cran.r-project.org/package=broman)
-- [ggplot2](https://ggplot2.tidyverse.org/)
-- [data.table](https://rdatatable.gitlab.io/data.table/)
-- [visdat](https://docs.ropensci.org/visdat/)
-- [naniar](http://naniar.njtierney.com/)
-- [cowplot](https://wilkelab.org/cowplot/)
+- [R/qtl2](https://kbroman.org/qtl2)
 
 
 ## pdfnup
@@ -36,7 +29,7 @@ extras](https://github.com/rrthomas/pdfjam-extras>).
 To the extent possible under law,
 [Karl Broman](https://github.com/kbroman)
 has waived all copyright and related or neighboring rights to
-&ldquo;[Data cleaning principles](https://github.com/kbroman/Talk_DataCleaning)&rdquo;.
+&ldquo;[General HMM for multi-parent populations](https://github.com/kbroman/Talk_DataCleaning)&rdquo;.
 This work is published from the United States.
 <br/>
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
