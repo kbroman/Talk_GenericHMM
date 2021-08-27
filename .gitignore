@@ -10,3 +10,4 @@ R/*.csv
 R/*.gz
 *_notes.tex
 R/_cache
+Figs/qtl_scan*.png

@@ -1,6 +1,6 @@
 STEM = general_hmm
 
-FIGS = Figs/hs.pdf Figs/ri8.pdf Figs/genome_reconstr.pdf
+FIGS = Figs/hs.pdf Figs/ri8.pdf Figs/genome_reconstr.pdf Figs/qtl_scan.png
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
 
@@ -13,6 +13,9 @@ $(STEM).pdf: $(STEM).tex header.tex $(FIGS)
 	xelatex $^
 
 Figs/%.pdf: R/%.R
+	cd R;R CMD BATCH $(R_OPTS) $(<F)
+
+Figs/%.png: R/%.R
 	cd R;R CMD BATCH $(R_OPTS) $(<F)
 
 $(STEM)_notes.pdf: $(STEM)_notes.tex header.tex $(FIGS)

@@ -129,6 +129,39 @@
 
 
 
+\begin{frame}[c]{QTL genome scan}
+
+
+  \only<1|handout 0>{\figh{Figs/qtl_scan_snps.png}{0.85}}
+  \only<2>{\figh{Figs/qtl_scan.png}{0.85}}
+
+  \note{
+
+    One could skip the whole genome reconstruction and just do QTL
+    analysis at the SNPs, as is done in GWAS.
+    If the genotyped SNPs include individual causal polymorphisms,
+    this could be best.
+
+    But if there are multiple causal polymorphisms in a region QTL
+    analysis with the inferred haplotypes may be more powerful.
+    Moreover, if the founder strains have been sequenced, you can use
+    the reconstructed genomes to get inferred genotypes at all
+    polymorphisms in the founders. (Similar approaches were used in
+    human GWAS, based on HapMap SNPs.)
+
+    Here, the single-SNP analysis shows significant evidence for a
+    single QTL on chromosome 1. The haplotype analysis indicates
+    evidence for a second QTL on chromosome 4.
+
+    Beyond QTL mapping, genome reconstructions are useful in data
+    diagnostics. For example, the estimated number of crossovers is
+    useful when assessing sample quality.
+  }
+
+\end{frame}
+
+
+
 \begin{frame}[c]{Summary}
 
   \bbi
