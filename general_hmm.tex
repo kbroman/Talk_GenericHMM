@@ -181,9 +181,17 @@
 
 
 
-\begin{frame}[c]{Hidden Markov model}
+\begin{frame}{Hidden Markov model}
+
+\figw{Figs/hmm.pdf}{1.0}
 
   \note{
+    The main approach for genome reconstruction is to use a hidden
+    Markov model. The underlying diplotypes we're trying to determine
+    follow a Markov chain $\{G_i\}$, but are unobserved. We observe
+    SNP genotypes $\{O_i\}$, with an assumed conditional independence
+    structure, where given $G_i$, $O_i$ is conditionally independent
+    of everything else.
   }
 
 \end{frame}

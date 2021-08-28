@@ -4,7 +4,8 @@ FIGS = Figs/hs.pdf \
 	   Figs/ri8.pdf \
 	   Figs/genome_reconstr.pdf \
 	   Figs/qtl_scan.png \
-	   Figs/do_genome.pdf
+	   Figs/do_genome.pdf \
+	   Figs/hmm.pdf
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
 
