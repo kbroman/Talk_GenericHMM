@@ -3,7 +3,6 @@
 ocolor <- "slateblue"
 gcolor <- "green4"
 arrowcolor <- "violetred"
-fgcolor <- "white"
 xgap <- 5
 
 library(here)
