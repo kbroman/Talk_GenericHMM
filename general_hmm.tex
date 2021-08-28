@@ -185,6 +185,22 @@
 
 \figw{Figs/hmm.pdf}{1.0}
 
+\bigskip
+
+{
+\centering
+\renewcommand{\arraystretch}{2.0}
+
+\begin{tabular}{l@{\hspace{1cm}}l}
+Initial    & $\text{Pr}(G_i = g)$ \\
+Transition & $\text{Pr}(G_{i+1} = g' \ | \ G_i = g)$ \\
+Emission   & $\text{Pr}(O_i \ | \ G_i = g)$
+\end{tabular}
+
+}
+
+
+
   \note{
     The main approach for genome reconstruction is to use a hidden
     Markov model. The underlying diplotypes we're trying to determine
