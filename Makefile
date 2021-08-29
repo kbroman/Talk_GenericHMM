@@ -8,7 +8,8 @@ FIGS = Figs/hs.pdf \
 	   Figs/hmm.pdf \
 	   Figs/founder_pop.pdf \
 	   Figs/cc_xchr_reconstr.pdf \
-	   Figs/do_qtl.pdf
+	   Figs/do_qtl.pdf \
+	   Figs/ri8X.pdf
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
 
