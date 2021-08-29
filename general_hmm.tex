@@ -209,6 +209,12 @@ Emission   & $\text{Pr}(O_i \ | \ G_i = g)$
     SNP genotypes $\{O_i\}$, with an assumed conditional independence
     structure, where given $G_i$, $O_i$ is conditionally independent
     of everything else.
+
+    Three sets of parameters govern the model: the initial and
+    transition probabilities, which concern the pattern of underlying
+    genotypes on the MPP chromosomes; and the emission probabilities,
+    which relate the underlying genotypes to the observed SNP
+    genotypes and largely concern a model for SNP genotyping errors.
   }
 
 \end{frame}
@@ -220,6 +226,16 @@ Emission   & $\text{Pr}(O_i \ | \ G_i = g)$
 \begin{frame}[c]{Exact probabilities}
 
   \note{
+      I've spent quite a lot of time studying the pattern of genotypes
+      on MPP chromosomes, first with a paper on multi-way recombinant
+      inbred lines, but then following up with three further papers
+      considering extra generations of outbreeding, the genotypes at
+      intermediate generations, and the patterns in advanced
+      intercross populations such as Diversity Outbred mice.
+
+      The mathematics is interesting but tedious. And is it necessary?
+      It would be nice to have a generic approach that could be used
+      generally.
   }
 
 \end{frame}
@@ -254,6 +270,28 @@ Emission   & $\text{Pr}(O_i \ | \ G_i = g)$
 
 
   \note{
+    And that is what I propose here. Imagine a population of $k$
+    founders in known (but not necessarily equal) proportions, and
+    that a multi-parent population is formed by random mating for $n$
+    discrete generations. In this case, we can calculate the
+    transition probabilities exactly.
+
+    We could apply these equations more generally. We need just specify the
+    proportions of the founders (which should be known from the design
+    of the study) and the effective number of generations of random
+    mating. The latter might be calibrated by considering the map
+    expansion (the proportional increase in the number of
+    recombination breakpoints, relative to a single meiosis).
+    This could be approximated by computer simulation.
+
+    For a heterozygous population, like HS or the DO, we draw two
+    random chromosomes. For a homozygyous population, like MAGIC lines
+    or the Collaborative Cross, we can pretend that they are doubled
+    haploids, with a single random chromosome like above.
+
+    For the X chromosome, we can use the same equations, replacing $n$
+    with $\left(\frac{\text{2}}{\text{3}}\right) n$, due to
+    recombination only happening on the X chromosome in females.
   }
 
 \end{frame}
