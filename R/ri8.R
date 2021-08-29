@@ -110,10 +110,8 @@ for(j in 2:ncol(temp)) {
 
 text(u[1],300,expression(G[2]),adj=c(0,0.5))
 #text(xxloc,270,c("ABCD","EFGH"),adj=c(0.5,1))
-text(xxloc[1]-14,270,"AB",adj=c(0.5,1))
-text(xxloc[1]+14,270,"CD",adj=c(0.5,1))
-text(xxloc[2]-14,270,"EF",adj=c(0.5,1))
-text(xxloc[2]+14,270,"GH",adj=c(0.5,1))
+text(xxloc[1],270,"ABCD",adj=c(0.5,1))
+text(xxloc[2],270,"EFGH",adj=c(0.5,1))
 xxloc <- mean(xxloc)
 points(xxloc,300,pch=4,cex=1.3)
 segments(xxloc,285,xxloc,265)
