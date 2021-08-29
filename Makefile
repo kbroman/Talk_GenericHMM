@@ -6,7 +6,9 @@ FIGS = Figs/hs.pdf \
 	   Figs/qtl_scan.png \
 	   Figs/do_genome.pdf \
 	   Figs/hmm.pdf \
-	   Figs/founder_pop.pdf
+	   Figs/founder_pop.pdf \
+	   Figs/cc_xchr_reconstr.pdf \
+	   Figs/do_qtl.pdf
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
 

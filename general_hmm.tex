@@ -326,9 +326,50 @@ Emission   & $\text{Pr}(O_i \ | \ G_i = g)$
 
 
 
-\begin{frame}[c]{DO application}
+\begin{frame}{DO application}
+
+  \figh{Figs/do_qtl.pdf}{0.78}
+
+  \bigskip
+
+  \hfill {\footnotesize \lolit data from Al-Barghouthi et al (2021)
+    \href{https://doi.org/gkf64n}{\tt \lolit doi.org/gkf64n}}
 
   \note{
+    If we apply our approach to data from Diversity Outbred mice, the
+    results with the generic model proposed above are basically
+    identical to the use of the more-exact model.  For data from
+    Al-Bargouthi et al (2021), this is the biggest difference seen:
+    the LOD curves are not distinguishable, as the biggest difference
+    is just 0.01.
+  }
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[c]{CC038 X chr}
+
+  \figh{Figs/cc_xchr_reconstr.pdf}{0.9}
+
+  \note{
+    Reconstructions of the genomes of Collaborative Cross lines are
+    identical for autosomes, but there are important differences for
+    the X chromosome.
+
+    This slide shows the reconstruction of the X chromosome in
+    Collaborative Cross line CC038, but the exact model (top panel)
+    and by the approximate model (bottom panel).
+
+    The analysis differs in that the top model excludes three of the
+    eight founders and weighs one of the other five more highly.
+
+    These results differ in a region around 135~Mbp, where in the bottom
+    panel, B6 and NOD are assigned equally probability, as they are
+    identical in the region, but the top panel was able to exclude B6.
   }
 
 \end{frame}
@@ -338,17 +379,6 @@ Emission   & $\text{Pr}(O_i \ | \ G_i = g)$
 
 
 \begin{frame}[c]{X chr in CC}
-
-  \note{
-  }
-
-\end{frame}
-
-
-
-
-
-\begin{frame}[c]{X chr reconstruction}
 
   \note{
   }
