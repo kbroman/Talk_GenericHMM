@@ -1,5 +1,7 @@
 # General HMM for multi-parent populations
 
+[![DOI](https://zenodo.org/badge/400469260.svg)](https://zenodo.org/badge/latestdoi/400469260)
+
 Slides for a talk for [Complex Trait
 Community](http://www.complextrait.org/ctc2021/), 1 Sept 2021.
 
