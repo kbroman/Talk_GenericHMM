@@ -1,4 +1,4 @@
-STEM = general_hmm
+STEM = generic_hmm
 
 FIGS = Figs/hs.pdf \
 	   Figs/ri8.pdf \
