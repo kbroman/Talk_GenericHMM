@@ -2,7 +2,7 @@
 
 I'm talking about a generic model for genotype reconstruction in multi-parent populations
 
-There's a wide variety of multi-parent populations, including recombinant inbred lines like the mouse Collaborative Cross and MAGIC lines in plants, and advanced intercrosses like heterogeneous stock and diversity outbred mice. A key step is to reconstruct the founder alleles along the chromosomes.
+There's a wide variety of multi-parent populations, including recombinant inbred lines like the mouse Collaborative Cross and MAGIC lines in plants, and advanced intercrosses like heterogeneous stock mice and rats and diversity outbred mice. They are formed from set of inbred founder strains, and their genomes are mosaics of the founders. A key analysis step is to reconstruct that pattern along the chromosomes using SNP genotypes.
 
 This is a 1 megabase region with SNP genotypes in the 8 founders and one diversity outbred mouse. We use this data to calculate the probability of each possible genotype. You can threshold those probabilities to get inferred genotypes.
 
@@ -10,9 +10,9 @@ You could skip genotype reconstruction and just do a t-test at each SNP, as in G
 
 Here's an example reconstruction for a DO mouse. This is what we're trying to figure out.
 
-The main methods use a hidden Markov model. The underlying genotypes form a Markov chain, but what we observe are the SNP genotypes. Three sets of parameters govern the model: the initial and transition probabilities concern the pattern of genotypes on the MPP chromosomes, while the emission probabilities concern a model for SNP genotyping errors.
+The main methods use a hidden Markov model. The underlying genotypes form a Markov chain, but what we observe are the SNP genotypes. Three sets of parameters govern the model: the initial and transition probabilities concern the pattern of genotypes on the MPP chromosomes, while the emission probabilities concern a model for SNP genotyping errors. R/qtl2 includes implementations for a variety of crosses, each with its own set of transition probabilities.
 
-I've spent a bunch of time characterizing the process on MPP chromosomes. I mean a lot of time. The R/qtl2 package includes implementations for a variety of crosses, but these exact calculations can be tedious.
+I've spent a bunch of time characterizing the process on MPP chromosomes. I mean a lot of time. But these exact calculations can be tedious.
 
 So here I propose a generic model that could be applied broadly. Imagine a founder population of k inbred lines in known proportions, and n discrete generations of random mating in huge populations. We can calculate the transition probabilities in this case. You need to specify the relative proportions of the founders, which is likely obvious from the design of the population, plus the effective number of generations of random mating, which might be calibrated through the observed map expansion, which is the proportional increase in recombination breakpoints. In a complex design, you could determine this from computer simulation.
 
