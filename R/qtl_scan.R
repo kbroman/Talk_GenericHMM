@@ -28,7 +28,7 @@ res <- 255
 
 endA <- xpos_scan1(pmap, thechr=19, thepos=max(pmap[[19]]))+25/2
 
-png(here("Figs/qtl_scan.png"), height=6.5*res, width=11*res, pointsize=10, res=res)
+png(here("Figs/qtl_scan.png"), height=6.5*res, width=13*res, pointsize=10, res=res)
 par(mar=c(2.1,4.1,2.1,1.1))
 layout(c(1,2), height=c(0.5, 0.5))
 
